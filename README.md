@@ -26,12 +26,11 @@ result := 0.0: 声明并初始化一个名为result的浮点数变量，用于�
 
 switch operator { ... }: 根据operator的值进行分支选择。
 
-25-27. case "+": result = num1 + num2: 如果operator的值是"+"，则执行加法运算，并将结果存储在result变量中。
+ case "+": result = num1 + num2: 如果operator的值是"+"，则执行加法运算，并将结果存储在result变量中。
 
-29-31. case "-": result = num1 - num2: 如果operator的值是"-"，则执行减法运算，并将结果存储在result变量中。
+ case "-": result = num1 - num2: 如果operator的值是"-"，则执行减法运算，并将结果存储在result变量中。
+ case "*": result = num1 * num2: 如果operator的值是"*"，则执行乘法运算，并将结果存储在result变量中。
 
-33-35. case "*": result = num1 * num2: 如果operator的值是"*"，则执行乘法运算，并将结果存储在result变量中。
-
-37-43. case "/": ...: 如果operator的值是"/"，则执行除法运算，并将结果存储在result变量中。如果num2不等于0，则执行除法运算；否则输出错误信息并终止程序。
+ case "/": ...: 如果operator的值是"/"，则执行除法运算，并将结果存储在result变量中。如果num2不等于0，则执行除法运算；否则输出错误信息并终止程序。
 
 fmt.Println("结果：", strconv.FormatFloat(result, 'f', 2, 64)): 输出结果到标准输出。使用strconv.FormatFloat函数将result转换为字符串，并限定小数点后2位。
